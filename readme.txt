@@ -84,36 +84,4 @@ Includes; GUI_Button class
 
 ----------------------------------------------
 
-<< CALEB'S NOTES >>
->> ONLY COMPILE IN main.py... USING ANY OTHERS WILL NOT WORK.
->> Definitely recommend VSCode with the 3 recommended Python extensions, and pygame installed on the PC. Way easier to navigate and work with.
->> We have 3 instances of platforms in the game; Instead of deleting them, they'll be on a timer or something and reappear at the right again (all off-screen of course).
->> Answered your question just under where it was Margo. See attacks.py / characters.py (I think) Just find the shoot() function, but don't mess with playerShoot() please.
->> Also cleaned up the cactus a little bit. Noticed it had a lot of transparent space around it, think it was messing with the rect or something. Also gave it a single frame death.
->> I also added in the "P" button, which is good for debugging some stuff... Just see main.py and the keyDown events to edit it as needed for debugging processes.
->> 4/6/24 - 4/15/24 -- Working on platforms. Failing miserably.
->> 4/15/24 -- Completely rewrote platform collision. Still haven't cracked it yet. But I'm close. It has to do with a loop or a flag or SOMETHING.
->> 4/17/24 -- PLATFORMS WORK! Will keep working on desert background.
->> 4/18/24 -- Added in score tracking via files, made some small QoL changes to enemies; Cactus is now technically impossible to kill.
->> 4/19/24 -- Enemies now give 100 points when deafeated; Enemies can now respawn off screen after X amount of time; More QoL stuff.
->> 4/19/24 -- Cont'd; New difficulties are added in over time, eventually speeds up infinitely; Enemies now drop collectibles. Time survived changes what's available.
->> 4/22-23/24 -- More QoL stuff.
->> 4/26/24 -- Fixed an issue where players could just wander off the screen; Fixed enemy sightlines; Player may now walk across screen infinitely, as they'll reappear on other side now.
 
-
-<< MARGO'S NOTES >>
->> did a clean up on the files
->> now can toggle between screens, t-travel/ b-back from travel
->> finally fixed pause screen
->> still need to pause everything behind new screen
->> cactus shoot his bullet now/updated bullet/shooting/character classes (still cant figure out the indexing error)
->> did some edits to the event handler for smoother transitions
->> fixed indexing
->> did backend changes today(4/13/24) nothing real obvious on in game
->> finished on enemy ai
->> took some liberties with main layout
->> added scrolling desert
->> added collision for tumbleweed
->> 4/20/24 -- added game over banner
->> 4/21/24 -- toggle between day/night and did some clean up on files
->> 4/27/24 -- Final Project Review/file clean up!
