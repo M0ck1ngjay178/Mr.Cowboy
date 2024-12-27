@@ -1,82 +1,92 @@
-# 🤠 Mr. Cowboy -- Arena Shooter/Platformer  
-
+# 🤠 **Mr. Cowboy -- Arena Shooter/Platformer**  
 *Updated as of 4/27/24*  
 
 ---
 
-## << LIBRARIES >>  
-- 🐍 `pygame`  -- Support for games in Python  
-- 📁 `os`      -- Support for folder/file navigation  
-- 🖥️ `sys`  
-- ⏳ `time`  
-- 🎲 `random`  
-- ➗ `math`  
+## 📜 **Project Info**  
+- **Game Title**: Mr. Cowboy -- Arena Shooter/Platformer  
+- **Author**: Your Name  
+- **Game Type**: Action/Platformer  
+- **Language**: Python  
+- **Libraries Used**: `pygame`, `os`, `sys`, `time`, `random`, `math`  
 
 ---
 
-## << INSTALL INSTRUCTIONS >>  
-- 📥 **Python3**: User must install the latest version of Python3 on their device  
-- 🎮 **pygame**: User must `pip install` the latest version of pygame on their device  
-- 🧰 The `os` and `sys` libraries are built into Python3 and don’t need to be installed.  
-- 🚀 **main.py**: User should only try to start the game in **`main.py`**; trying in any other module will not work.
+## 🛠️ **Installation Instructions**  
+1. Install the latest version of Python 3 on your device.  
+2. Install the latest version of `pygame` via pip:
+    ```bash
+    pip install pygame
+    ```
+3. The `os` and `sys` libraries come pre-installed with Python, so no installation is needed for them.  
+4. Start the game only by running **`main.py`**. Trying to run any other module won't work.  
 
 ---
 
-## << GAME START INSTRUCTIONS >>  
-- 💻 User may start the game in the IDLE editor, but ensure that ALL `.py` files are in the same folder.  
-- ⚡ Only start the game in **`main.py`**.  
-- 🔁 Anytime a player dies, they must restart the entire program to play again.
+## 🎮 **Game Start Instructions**  
+- Start the game in the IDLE editor, ensuring that **ALL .py files** are in the same folder.  
+- As mentioned, **only run `main.py`** to play the game.  
+- When a player dies, restart the entire program to play again.  
 
 ---
 
-## << CONTROLS >>  
-- ⏎ **ENTER** - Start Game  
-- 🕹️ **W** - Jump  
-- ⬅️ **A** - Move Left  
-- ➡️ **D** - Move Right  
-- 🔫 **Space** - Shoot  
-- 💥 **Q** - Throw Dynamite  
-- 🏆 **T** - Travel (Credits Page)  
-- 🚶 **B** - Exit Travel Mode  
-- 🛠️ **P** - Debug key; Grants player an absurd amount of health for testing purposes.  
+## ⌨️ **Controls**  
+- **ENTER**: Start Game  
+- **W**: Jump  
+- **A**: Move Left  
+- **D**: Move Right  
+- **Space**: Shoot  
+- **Q**: Throw Dynamite  
+- **T**: Travel (Credits Page)  
+- **B**: Exit Travel Mode  
+- **P**: Debug Key (Grants absurd health for testing purposes)  
 
 ---
 
-## << RULES >>  
-- 🔄 Player may double jump when on the ground, but not when on a platform. More options in tight situations.  
-- 🏃‍♂️ If a player falls or walks off a platform, they cannot land on one below them.  
-- 🪜 Platforms are only used to go higher, not lower.  
-- 🌐 Players may walk off the sides of the screen, but be careful, you'll reappear on the other side! Applies to dynamite too, but not bullets.  
-- ⏱️ After a certain amount of time, platform speed will continually change, enemy speeds will increase infinitely, and 2 new enemies will appear for a total of 4 enemies.
+## 📏 **Rules**  
+- Players may double jump only when on the ground, not while on a platform.  
+- Falling or walking off a platform prevents landing on one below.  
+- Platforms are for going higher, not lower.  
+- Players can walk off one side of the screen and reappear on the other side. Dynamite follows this rule, but bullets do not.  
+- After a certain amount of time:  
+    - Platform speed will continuously change.  
+    - Enemy speeds will increase infinitely.  
+    - 2 new enemies will spawn for a total of 4 enemies.  
 
 ---
 
-## << ITEM DROPS AND ODDS >>  
-- 👒 **Golden Hats** - Restore a small amount of health (15% at Start, 0% after X Time)  
-- 👢 **Boots** - Permanent speed boost for the player (5% at Start, 15% after X Time)  
-- 💣 **Dynamite Crate** - Replenish some dynamite (40% at Start, 25% after X Time)  
-- 🎯 **Ammo Box** - Replenish 12 Bullets (39% at Start, 50% after X Time)  
-- 💰 **Silver Dollar** - Completely restores all player attributes and ammo (1% for Full Game)
+## 🎁 **Item Drops and Odds**  
+- **Golden Hats**: Restore a small amount of health (15% at Start, 0% after X Time)  
+- **Boots**: Permanent speed boost (5% at Start, 15% after X Time)  
+- **Dynamite Crate**: Replenishes dynamite (40% at Start, 25% after X Time)  
+- **Ammo Box**: Replenishes 12 bullets (39% at Start, 50% after X Time)  
+- **Silver Dollar**: Completely restores all player attributes and ammo (1% chance for the full game)  
 
 ---
 
-## << MODULES >>  
-- **`main.py`** - Contains the main instance of the game among MANY other things. Relies on `setUp.py` and various other modules for successful operation. **ONLY USE THIS FILE TO BUILD/COMPILE.**
-  
-- **`setUp.py`** - Contains backend setup. Loads images, creates needed game objects, and holds essential functions. Calls on other modules.
+## 🗂️ **Modules**  
+- **`main.py`**: Contains the main instance of the game and other essential functions.  
+  - Relies on **`setUp.py`** and other modules for smooth operation.  
+  - ONLY use this file to build or compile the game.  
 
-- **`attacks.py`** - Handles all character attacks (shooting, throwing dynamite, etc). Includes the `Bullet`, `Dynamite`, and `Explosion` classes.
+- **`setUp.py`**: Backend setup. Initializes all necessary objects and loads images.  
+  - Calls other modules for proper game operation.
 
-- **`characters.py`** - All character-related info and classes. AI and player features are in this file. Includes `Characters` and `Healthbar` classes.
+- **`attacks.py`**: Stores all character attacks (shooting, throwing dynamite, etc.).  
+  - Includes: Bullet class, Dynamite class, Explosion class.
 
-- **`environment.py`** - Contains dynamic environment objects that move, like the `Tumbleweed` and `Platform` classes.
+- **`characters.py`**: Character-related information and classes.  
+  - Includes: Characters class, Healthbar class.
 
-- **`items.py`** - Holds player-only collectibles/power-ups. Includes the `ItemBox` class.
+- **`environment.py`**: Defines dynamic environment objects.  
+  - Includes: Tumbleweed class, Platform class.
 
-- **`guiFeatures.py`** - Handles GUI features for buttons and interactions. Includes the `GUI_Button` class.
+- **`items.py`**: Contains player-only collectibles and power-ups.  
+  - Includes: ItemBox class.
+
+- **`guiFeatures.py`**: Defines necessary GUI features for buttons.  
+  - Includes: GUI_Button class.
 
 ---
-
-Enjoy the wild west adventure in Mr. Cowboy! 🤠💥  
 
 
